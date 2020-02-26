@@ -3,10 +3,16 @@
     <!-- <h1>nssliu</h1> -->
     <h1>General Project Control</h1>
     <el-divider></el-divider>
-    
+    <div style="height: 300px;">
+      <el-steps direction="vertical" :active="1">
+        <el-step title="步骤 1"></el-step>
+        <el-step title="步骤 2"></el-step>
+        <el-step title="步骤 3" description="这是一段很长很长很长的描述性文字"></el-step>
+      </el-steps>
+    </div>
     
     <el-divider></el-divider>
-    
+    <jin-du></jin-du>
     <el-divider></el-divider>
     
    
@@ -23,7 +29,7 @@
     
     <el-divider></el-divider>
     
-   
+    <table-s></table-s>
     <el-divider></el-divider>
 
     <el-divider></el-divider>
@@ -44,10 +50,11 @@
 <script>
 let appconfig = APPCONFIG;
 
-
+import JinDu from './child/JinDu.vue'
+import TableS from './child/TableS.vue'
 export default {
   name: 'Main',
-  components:{},
+  components:{JinDu,TableS},
   data () {
     return {
       appList:appconfig.apps,
