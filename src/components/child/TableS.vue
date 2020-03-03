@@ -10,7 +10,7 @@
 
 <script>
 let appconfig = APPCONFIG;
-let tableName = 'smdtv_2'
+let tableName = 'smdtv_4'
   export default {
     name:'tables',
     data() {
